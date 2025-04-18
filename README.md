@@ -7,7 +7,6 @@ A simple command-line tool to create and manage GitHub issues directly from your
 - Create new issues with title and body
 - Assign labels, assignees, and milestones
 - List and search existing issues
-- Close issues directly from the CLI
 
 ## 🛠️ Installation
 
@@ -27,7 +26,12 @@ GITHUB_TOKEN=your_personal_access_token
 Create a New Issue
 
 bash
-./github-issue-cli create --title "Bug: Unexpected error" --body "Steps to reproduce..." --labels bug --assignees your-username
+./github-issue-cli create \
+  --title "Bug: Unexpected error" \
+  --body "Steps to reproduce..." \
+  --labels bug \
+  --assignees your-username
+
 
 List Open Issues
 
